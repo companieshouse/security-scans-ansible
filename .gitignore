@@ -1,0 +1,13 @@
+# Ansible
+.ansible
+*.retry
+
+# Galaxy roles
+galaxy_roles/
+
+# Mac files
+.DS_Store
+._*
+
+# vscode
+.vscode
