@@ -1,0 +1,2 @@
+---
+vault_base_path: /applications/finance-{{ environment_name }}-eu-west-2/oracle
