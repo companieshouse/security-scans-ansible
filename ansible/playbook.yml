@@ -5,7 +5,7 @@
     - role: companieshouse.general.ssh_key
       vars:
         ssh_key_name: ansible_remote
-        ssh_key_vault_path: "{{ vault_base_path }}/aws"
+        ssh_key_vault_path: "/applications/{{ application_name }}-{{ environment_name }}-eu-west-2/{{ vault_path }}"
 
 - name: Run CH Security Scans from Ansible Galaxy
   hosts: aws_ec2
