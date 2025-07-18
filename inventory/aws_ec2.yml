@@ -1,0 +1,18 @@
+plugin: amazon.aws.aws_ec2
+boto_profile: { { aws_profile } }
+
+regions:
+  - { { aws_region } }
+
+filters:
+  tag:Service: { { service } }
+  tag:Environment: { { environment } }
+  tag:InstanceName: { { instance_name } }
+  tag:SecurityScans: true
+
+keyed_groups:
+  - key: tags
+    prefix: tag
+    separator: "_"
+
+hostnames: private-ip-address
