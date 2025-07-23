@@ -1,11 +1,11 @@
 plugin: amazon.aws.aws_ec2
-boto_profile: {{ aws_profile }}
+boto_profile: "{{ aws_profile }}"
 
 regions:
-  - {{ aws_region }}
+  - "{{ aws_region }}"
 
 filters:
-  tag:InstanceName: {{ instance_name }}
+  tag:InstanceName: "{{ instance_name }}"
   tag:SecurityScans: true
 
 keyed_groups:
