@@ -5,8 +5,6 @@ regions:
   - { { aws_region } }
 
 filters:
-  tag:Service: { { service } }
-  tag:Environment: { { environment } }
   tag:InstanceName: { { instance_name } }
   tag:SecurityScans: true
 
