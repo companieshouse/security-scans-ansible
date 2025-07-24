@@ -5,7 +5,7 @@ regions:
   - "${AWS_REGION}"
 
 filters:
-  tag:InstanceName: "${INSTANCE_NAME}"
+  tag:Name: "${INSTANCE_NAME}"
   tag:SecurityScans: true
 
 keyed_groups:
